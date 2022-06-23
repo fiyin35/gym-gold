@@ -1,0 +1,24 @@
+.heroBanner {
+    position: relative;
+    padding: 20px;
+    &_text {
+        color: #FF2625;
+        font-weight: 600;
+        font-size: 26px;
+        &-sweat {
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 23px;
+        }
+        &-check {
+            font-size: 22px;
+            line-height: 35px;
+            margin-bottom: 12px;
+            margin-top: 14px; 
+        }
+    }
+    &_btn {
+        background-color: #ff2625;
+        padding: 10px; 
+    }
+}
