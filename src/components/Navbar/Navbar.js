@@ -23,7 +23,7 @@ const Navbar = () => {
         fontSize="24px"
         alignItems="flex-end">
             <Link className="navbar__link" to="/"> Home </Link>
-            <a className="navbar__link" href="#exercise">Exercise</a>
+            <a className="navbar__link" href="#exercises">Exercise</a>
         </Stack>
     </Stack>
   )
