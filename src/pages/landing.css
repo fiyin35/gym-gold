@@ -10,14 +10,26 @@
     padding: 10px 50px;
 }
 
-
     .navbar__logo {
-        height: 48px; 
-        width: 48px;
         margin: 0 20px;
     }
+
     .navbar__link {
         text-decoration: none;
         border-bottom: 3px solid #FF2625;
         color: #3A1212;
     }
+
+    @media (max-width: 576px) { 
+        .appbar {
+            padding: 10px 20px;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center;
+        }  
+        
+        .navbar__logo {
+         margin: 0 8px;
+         }
+     }
+     

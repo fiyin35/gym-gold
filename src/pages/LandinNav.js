@@ -6,7 +6,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 import { Button} from '@mui/material';
-import Logo from '../assets/images/Logo.png'
+import Logo from '../assets/images/Logo-1.png'
 import * as actionType from '../constants/actionTypes';
 import './landing.css'
 
@@ -21,7 +21,7 @@ const LandingNav = () => {
   const logout = () => {
     dispatch({ type: actionType.LOGOUT });
 
-    navigate('/signin');
+    navigate('/');
 
     setUser(null);
   };
@@ -36,6 +36,7 @@ const LandingNav = () => {
     }
 
     setUser(JSON.parse(localStorage.getItem('profile')));
+    // eslint-disable-next-line
   }, [location]);
 
   return (

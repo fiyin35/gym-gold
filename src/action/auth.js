@@ -10,7 +10,7 @@ export const signin = (formData, navigate) => async (dispatch) => {
 
         dispatch({ type: AUTH, data});
         //console.log('You are supposed to route to homepage');
-        navigate('/');
+        navigate('/home');
     } catch (err) {
         console.log(err);
     }
@@ -24,7 +24,7 @@ export const signup = (formData, navigate) => async (dispatch) => {
         const { data } = await api.signUp(formData);
 
         dispatch({ type: AUTH, data});
-        navigate('/');
+        navigate('/home');
     } catch (err) {
         console.log(err);
     }
