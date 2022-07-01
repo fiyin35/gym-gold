@@ -49,7 +49,7 @@ const LandingNav = () => {
       fontSize="24px"
       alignItems="flex-end">
        
-          <Link className="navbar__link" to="/"> Home </Link> 
+          <Link className="navbar__link" to="/home"> Home </Link> 
           <a className="navbar__link" href="#exercises">Exercise</a>
       </Stack>) : ( <></>
       ) }
